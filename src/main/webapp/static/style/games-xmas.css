@@ -1,0 +1,232 @@
+@font-face {
+    font-family: fontone;
+    src: url(../images/font/HYZhuZiMuTouRenW.ttf);
+}
+
+@font-face {
+    font-family: a;
+    src: url(../images/font/a.ttf);
+}
+
+@font-face {
+    font-family: b;
+    src: url(../images/font/b.ttf);
+}
+
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+body{
+    width: 100%;
+    height: 100%;
+    background: url(../images/indexbg.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+
+.voiceList{
+    float: right;
+    margin-top: 0.4rem;
+    overflow: hidden;
+}
+
+.voiceItem{
+    float: right;
+    padding: 0.2rem;
+    padding-top: 0rem;
+    text-align: center;
+}
+
+.settings {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+.game-container {
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    overflow: hidden;
+}
+
+.game-over{
+    background-color: rgba(0,0,0,0.7);
+    z-index: 100;
+}
+
+.enemy {
+    background: url(../images/thief.png) no-repeat;
+    position: absolute;
+    width: 1.17rem;
+    height: 1.48rem;
+    background-size: 100% 100%;
+}
+
+.enemy-fast {
+    background: url(../images/fastthief.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.control {
+    position: absolute;
+    bottom: 5rem;
+    left: 4rem;
+    height: 2.0rem;
+    width: 1.3rem;
+    z-index: 10000;
+}
+
+.control img{
+    width: 1.4rem;
+    height: 2.06rem;
+}
+
+.over {
+    position: relative;
+    display: none;
+    margin: 0 auto;
+    top: -13rem;
+    width: 8.08rem;
+    height: 8.53rem;
+    z-index: 1000;
+}
+
+.over img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.close {
+    position: absolute;
+}
+
+.btn{
+    width: 2.8rem;
+    height: 1.32rem;
+}
+
+.btnsList {
+    position: relative;
+    top: -2.5rem;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.time {
+    width: 4.0rem;
+    position: relative;
+    margin-top: 0.1rem;
+    display: inline-block;
+    padding-left: 0.3rem;
+}
+
+.time img{
+    width: 100%;
+    height: 100%;
+}
+
+.seconds {
+    position: absolute;
+    top: 0.33rem;
+    left: 1.0rem;
+    width: 60%;
+    height: 60%;
+    font-size: 0.4rem;
+    text-align: center;
+    line-height: 0.9rem;
+    color: #f1fffe;
+    letter-spacing: 0.05rem;
+    font-family: fontone;
+}
+
+.place,
+.point,
+.chance{
+    position: absolute;
+    font-size: 0.5rem;
+    font-family: b;
+}
+
+
+.voice img{
+    width: 0.78rem;
+    height: 0.78rem;
+}
+
+.help img{
+    width: 0.78rem;
+    height: 0.78rem;
+}
+
+.place{
+    width: 6.6rem;
+    height: 0.8rem;
+    top: 3.4rem;
+    left: 0.75rem;
+    text-align: center;
+    line-height: 0.8rem;
+}
+
+
+
+.point{
+    width: 6.6rem;
+    height: 0.8rem;
+    top: 4.2rem;
+    left: 0.75rem;
+    text-align: center;
+    line-height: 0.8rem;
+}
+
+.pointafter,
+.pointbefore,
+.placeafter,
+.placebefore,
+.chancebefore,
+.chanceafter
+{
+    display: inline-block;
+    color: #fee887;
+    font-family: b;
+}
+
+.chance{
+    width: 6.6rem;
+    height: 0.8rem;
+    top: 5.2rem;
+    left: 0.75rem;
+    text-align: center;
+    line-height: 0.8rem;
+}
+.poi,
+.cha,
+.p{
+    color: #e95d55;
+
+}
+
+.again {
+    float: left;
+}
+
+.viewrank {
+    float: right;
+}
+
+.buff img{
+    width: 0.8rem;
+    height: 0.8rem; 
+    position: absolute;
+}
+

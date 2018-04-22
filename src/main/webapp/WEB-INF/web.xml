@@ -1,0 +1,34 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+  <display-name>Archetype Created Web Application</display-name>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/WEB-INF/error.jsp</location>
+  </error-page>
+  <error-page>
+    <error-code>500</error-code>
+    <location>/WEB-INF/error.jsp</location>
+  </error-page>
+  <error-page>
+    <exception-type>java.lang.Exception</exception-type>
+    <location>/WEB-INF/error.jsp</location>
+  </error-page>
+  <welcome-file-list>
+    <welcome-file>/views/start.jsp</welcome-file>
+  </welcome-file-list>
+
+  <filter>
+    <filter-name>testUser</filter-name>
+    <filter-class>org.redrock.wxchristmas.filter.isUser</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>testUser</filter-name>
+    <url-pattern>/game/*</url-pattern>
+  </filter-mapping>
+
+</web-app>
